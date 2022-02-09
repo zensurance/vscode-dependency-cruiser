@@ -1,6 +1,7 @@
 node_modules
 .vscode-test/
 *.vsix
+!zen-custom-builds/*.vsix
 .eslintcache
 dist/
 .nyc_output/

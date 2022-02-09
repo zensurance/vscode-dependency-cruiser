@@ -2,7 +2,7 @@
     "name": "vscode-dependency-cruiser",
     "displayName": "Dependency Cruiser Extension",
     "description": "Visual Studio Code Extension to build dependency graphs using dependency-cruiser. Visualize module dependencies from any file",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "publisher": "juanallo",
     "license": "SEE LICENSE IN LICENSE",
     "engines": {
@@ -50,7 +50,7 @@
             ]
         },
         "configuration": {
-            "title": "dependencyCruiser", 
+            "title": "dependencyCruiser",
             "properties": {
                 "dependencyCruiser.exclude": {
                     "type": "string",
@@ -70,7 +70,15 @@
                     "type": "string",
                     "scope": "resource",
                     "default": "directed",
-                    "enum": ["directed", "undirected", "undirectedCompressed", "clustered", "circular", "radial", "treemap"],
+                    "enum": [
+                        "directed",
+                        "undirected",
+                        "undirectedCompressed",
+                        "clustered",
+                        "circular",
+                        "radial",
+                        "treemap"
+                    ],
                     "description": "Layout for the diagram"
                 },
                 "dependencyCruiser.prefix": {
@@ -81,7 +89,11 @@
                 "dependencyCruiser.moduleSystems": {
                     "type": "array",
                     "scope": "resource",
-                    "default": ["amd", "cjs", "es6"],
+                    "default": [
+                        "amd",
+                        "cjs",
+                        "es6"
+                    ],
                     "description": "Define the module systems to be used. Supported: ['amd', 'cjs', 'es6', 'tsd']"
                 },
                 "dependencyCruiser.tsConfig": {
@@ -100,14 +112,24 @@
                     "type": "string",
                     "scope": "resource",
                     "default": "node",
-                    "enum": ["top", "folder", "node"],
+                    "enum": [
+                        "top",
+                        "folder",
+                        "node"
+                    ],
                     "description": "The output type will specify the tree be generated."
                 },
                 "dependencyCruiser.theme": {
                     "type": "string",
                     "scope": "resource",
                     "default": "basic",
-                    "enum": ["basic", "simple", "blueprint", "flat", "custom"],
+                    "enum": [
+                        "basic",
+                        "simple",
+                        "blueprint",
+                        "flat",
+                        "custom"
+                    ],
                     "description": "The output type will specify the tree be generated."
                 },
                 "dependencyCruiser.customTheme": {
